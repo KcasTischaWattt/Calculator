@@ -37,7 +37,7 @@ public class CalculatorTest {
 
     @Tag("DEV")
     @Test
-    @DisplayName("Test 3: mul")
+    @DisplayName("Test 3: mod")
     void testModFst() {
         var expected = 1;
         var result = calculator.mod(3, 2);
@@ -46,10 +46,8 @@ public class CalculatorTest {
 
     @Tag("DEV")
     @Test
-    @Disabled
-    @DisplayName("Test 4: mul")
+    @DisplayName("Test 4: mod")
     void testModSec() {
-        // Неверно работающий метод, поэтому для примера отключил его
         var expected = 1;
         var result = calculator.mod(5, 2);
         Assertions.assertEquals(expected, result);
